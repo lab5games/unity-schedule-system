@@ -121,6 +121,8 @@ namespace Lab5Games.Schedules
         #region Unity Calls
         private void Awake()
         {
+            _instance = this;
+
             DontDestroyOnLoad(gameObject);
         }
 
