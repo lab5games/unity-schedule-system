@@ -107,12 +107,13 @@ namespace Lab5Games.Schedules
 
             _scheduleList.Clear();
 
-            Debug.Log("[ScheduleSystem] Cancel all");
+            Debug.Log("[ScheduleSystem] Cancel all", this);
         }
 
         private bool AddScheduel_Internal(Schedule schedule)
         {
             _scheduleList.Add(schedule);
+            Debug.Log($"[ScheduleSystem] {schedule.GetType().Name} added", this);
 
             return true;
         }
